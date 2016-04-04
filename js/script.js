@@ -89,10 +89,20 @@ var ding = new Audio("audio/ding.mp3"),
   },
   modal = {
     show: function(){
-      $("#modal").fadeIn(300);
+      $("#overlay").css({
+        "display": "flex",
+        "visibility": "hidden"
+      });
+      $("#overlay").hide();
+      $("#overlay").css({"visibility": "visible"})
+      $("#overlay").fadeIn(300, function(){
+        $("#modal").fadeIn(300);
+      });
     },
     hide: function(){
-      $("#modal").fadeOut(300);
+      $("#modal").fadeOut(300, function(){
+        $("#overlay").fadeOut(300);
+      });
     }
   }
 

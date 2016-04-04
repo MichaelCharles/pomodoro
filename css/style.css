@@ -84,17 +84,25 @@ body {
 
 /* MODAL */
 
-#modal {
+#overlay {
+  background-color: rgba(0,0,0,.25);
+  height: 100%;
+  width: 100%;
   position: absolute;
-  margin: auto;
   left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal {
+  display: none;
+  margin: auto;
   height: 320px;
   max-width: 300px;
   width: auto;
-  display: none;
 }
 
 /* PHONE SIZE */
