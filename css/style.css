@@ -67,7 +67,6 @@ body {
 
 .option-row button {
   min-width: 25px;
-  border-radius: 9001px;
 }
 
 #session-length,
@@ -83,6 +82,21 @@ body {
   visibility: hidden;
 }
 
+/* MODAL */
+
+#modal {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 320px;
+  max-width: 300px;
+  width: auto;
+  display: none;
+}
+
 /* PHONE SIZE */
 
 @media (max-width: 500px){
@@ -90,7 +104,7 @@ body {
     background: white;
     display: block;
   }
-  .mdl-card {
+  #pomodoro.mdl-card {
   	max-width: 100%;
     box-shadow: none;
   }
