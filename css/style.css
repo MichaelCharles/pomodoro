@@ -85,7 +85,7 @@ body {
 
 /* PHONE SIZE */
 
-@media (max-width: 330px){
+@media (max-width: 500px){
   body {
     background: white;
     display: block;
