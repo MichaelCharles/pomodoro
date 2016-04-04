@@ -1,0 +1,96 @@
+/* ELEMENT STYLES */
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD STYLES */
+
+.mdl-card {
+  width: 100%;
+  max-width: 330px;
+}
+
+/* PRIMARY COLOR SPACE */
+
+.mdl-card__title {
+  height: 125px;
+}
+
+#vert-menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#counter {
+  margin-top: 42px;
+  font-size: 50px;
+}
+
+#message {
+  font-size: 24px;
+  margin-top: 2.6em;
+  display: none;
+}
+
+.mdl-card__title {
+  display: block;
+  text-align: center;
+}
+
+/* OPTIONS */
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5em;
+}
+
+.sound-row {
+	padding-right: 16px;
+}
+
+@media (max-width: 255px) {
+  .option-row {
+    flex-direction: column;
+  }
+}
+
+.option-row i {
+  font-size: 12px;
+  
+}
+
+.option-row button {
+  min-width: 25px;
+  border-radius: 9001px;
+}
+
+#session-length,
+#break-length {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+}
+
+/* ACTION BUTTONS */
+
+#action2 {
+  visibility: hidden;
+}
+
+/* PHONE SIZE */
+
+@media (max-width: 330px){
+  body {
+    background: white;
+    display: block;
+  }
+  .mdl-card {
+    box-shadow: none;
+  }
+}
