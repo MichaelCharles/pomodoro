@@ -1,119 +1,102 @@
 /* ELEMENT STYLES */
 
 body {
-  background: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 /* CARD STYLES */
 
 .mdl-card {
-  width: 100%;
-  max-width: 330px;
+    width: 100%;
+    max-width: 330px;
 }
-
 /* PRIMARY COLOR SPACE */
 
 .mdl-card__title {
-  height: 125px;
+    height: 125px;
 }
-
 #vert-menu-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
-
 #counter {
-  margin-top: 42px;
-  font-size: 50px;
+    margin-top: 42px;
+    font-size: 50px;
 }
-
 #message {
-  font-size: 24px;
-  margin-top: 2.6em;
-  display: none;
+    font-size: 24px;
+    margin-top: 2.6em;
+    display: none;
 }
-
 .mdl-card__title {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
-
 /* OPTIONS */
 
 .option-row {
-  display: flex;
-  justify-content: space-between;
-  line-height: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5em;
 }
-
 .sound-row {
-	padding-right: 16px;
+    padding-right: 16px;
 }
-
 @media (max-width: 255px) {
-  .option-row {
-    flex-direction: column;
-  }
+    .option-row {
+        flex-direction: column;
+    }
 }
-
 .option-row i {
-  font-size: 12px;
-  
+    font-size: 12px;
 }
-
 .option-row button {
-  min-width: 25px;
+    min-width: 25px;
 }
-
 #session-length,
 #break-length {
-  display: inline-block;
-  width: 20px;
-  text-align: right;
+    display: inline-block;
+    width: 20px;
+    text-align: right;
 }
-
 /* ACTION BUTTONS */
 
 #action2 {
-  visibility: hidden;
+    visibility: hidden;
 }
-
 /* MODAL */
 
 #overlay {
-  background-color: rgba(0,0,0,.25);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    background-color: rgba(0, 0, 0, .25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
-
 #modal {
-  display: none;
-  margin: auto;
-  height: 320px;
-  max-width: 300px;
-  width: auto;
+    display: none;
+    margin: auto;
+    height: 320px;
+    max-width: 300px;
+    width: auto;
 }
-
 /* PHONE SIZE */
 
-@media (max-width: 500px){
-  body {
-    background: white;
-    display: block;
-  }
-  #pomodoro.mdl-card {
-  	max-width: 100%;
-    box-shadow: none;
-  }
+@media (max-width: 500px) {
+    body {
+        background: white;
+        display: block;
+    }
+    #pomodoro.mdl-card {
+        max-width: 100%;
+        box-shadow: none;
+    }
 }
