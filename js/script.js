@@ -86,6 +86,14 @@ var ding = new Audio("audio/ding.mp3"),
       this.startTime = new Date().getTime();
       this.endTime = this.startTime + this.timeRemaining;
     }
+  },
+  modal = {
+    show: function(){
+      $("#modal").fadeIn(300);
+    },
+    hide: function(){
+      $("#modal").fadeOut(300);
+    }
   }
 
 function playDing(){
@@ -218,6 +226,9 @@ $(document).ready(function() {
   });
   
   $("#fcc").click(function() {
-      
+      modal.show();
+  })
+  $("#close").click(function() {
+    modal.hide();
   })
 })
