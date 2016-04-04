@@ -91,6 +91,7 @@ body {
     display: block;
   }
   .mdl-card {
+  	max-width: 100%;
     box-shadow: none;
   }
 }
