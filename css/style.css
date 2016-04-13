@@ -5,6 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("http://moarpowah.com/wp-content/uploads/2012/09/Nice-Scenery.jpg");
+    background-size: cover;
+    background-position: center;
 }
 /* CARD STYLES */
 
